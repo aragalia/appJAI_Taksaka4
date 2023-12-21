@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+section {
+  padding: 2rem 9%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(167, 116, 21);
+  padding: 0 100px 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.7rem 1rem #0000001a;
+}
+header .logo {
+  max-width: 60px;
+  margin-left: 40px;
+}
+header .navlist {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+header .navlist a {
+  font-size: 15px;
+  padding: 0 1.5rem;
+  color: cornsilk;
+}
+.servis a {
+  display: flex;
+}
+.servis i {
+  font-size: 20px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+}
+.servis:hover i {
+  transform: rotate(180deg);
+}
+.servis:hover .drop-down {
+  display: block;
+}
+header .navlist .drop-down li {
+  list-style: none;
+  height: 100%;
+  padding: 1rem 2rem;
+
+  cursor: pointer;
+  font-size: 15px;
+}
+.servis .drop-down {
+  position: absolute;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem -0.5rem;
+  background: rgb(167, 116, 21);
+  color: cornsilk;
+  box-shadow: 0 0.7rem 1rem #0000001a;
+  display: none;
+}
+.drop-down li:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+header .navlist a:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+#menu-icon {
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../img/ltrjeruk3.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .content .textbox {
+  max-width: 600px;
+}
+.home .content .textbox h2 {
+  color: white;
+  font-size: 55px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.home .content .textbox h1 {
+  color: yellow;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: "Nosifer", sans-serif;
+}
+.home .content .textbox h1 span {
+  color: white;
+  font-size: 30px;
+}
+.home .content .textbox p {
+  font-size: 13px;
+  color: rgb(84, 83, 83);
+  padding: 1rem 0;
+  line-height: 1.5;
+  font-family: "Playfair Display", serif;
+}
+.home .content .textbox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: yellow;
+  color: rgb(102, 73, 20);
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.home .content .textbox a:hover {
+  transform: scale(1.1);
+}
+.home .content .imgbox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  margin-top: 30px;
+}
+.home .content .imgbox img {
+  max-width: 480px;
+}
+.home .content .imgbox img:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  width: 100%;
+  padding: 100px;
+  align-items: center;
+  background: black;
+  min-height: 100vh;
+}
+.info .content3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.info .content3 .textinfo {
+  max-width: 600px;
+}
+.info .content3 .textinfo h2 {
+  color: white;
+  font-size: 4.5em;
+  line-height: 1.4em;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.info .content3 .textinfo p {
+  color: white;
+  font-size: 1.5em;
+  padding-top: 70px;
+  text-align: justify;
+}
+.info .content3 .imginfo {
+  width: 600px;
+  text-align: center;
+  justify-content: flex-start;
+}
+.info .content3 .imginfo img {
+  max-width: 500px;
+}
+.info .content3 .imginfo img:hover {
+  transform: scale(1.1);
+}
+
+.info .lanjut {
+  color: white;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.tim {
+  background: rgb(208, 171, 145);
+
+  align-items: center;
+  min-height: 95vh;
+}
+.tim .heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #ff8c00;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgb(0, 0, 0);
+}
+.tim .container {
+  padding: 0 50px 30px;
+  font-weight: 100px;
+  font-size: 30px;
+}
+
+.tim .container .row p {
+  font-weight: 50px;
+  font-size: 17px;
+}
+.tim .container .row img {
+  padding: 0 0 10px;
+}
+.tim .container .row img:hover {
+  transform: scale(1.1);
+}
+
+.detec {
+  background: url("../img/ltrjeruk4.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.detec .content2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detec .content2 .imgj1 {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0px;
+  margin-top: 30px;
+}
+.detec .content2 .imgj1 img {
+  max-width: 500px;
+}
+.detec .content2 .upload {
+  text-align: center;
+  margin-right: 180px;
+}
+.detec .content2 .upload button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 100px; /* Tambahkan properti ini untuk menggeser ke kiri */
+  padding: 10px 26px;
+  background: rgb(236, 229, 229);
+  color: black;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 3px 8px 15px black;
+  width: 160px;
+  font-size: 15px;
+}
+
+.detec .content2 .upload button:active {
+  transform: scale(0.9);
+}
+.detec .content2 .upload p {
+  font-size: 17px;
+  padding-top: 10%;
+  font-weight: 100px;
+}
+
+.camera {
+  width: 100%;
+  padding: 100px;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(208, 171, 145);
+  display: grid;
+  place-items: center;
+}
+.camera .content4 {
+  display: flex;
+  align-items: center;
+}
+.camera .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: yellow;
+  color: rgb(102, 73, 20);
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.camera .btn:hover {
+  transform: scale(1.1);
+}
+
+.up {
+  width: 100%;
+  padding: 100px;
+  align-items: center;
+  background: rgb(208, 171, 145);
+  min-height: 100vh;
+}
+.up .form-control {
+  width: 150px;
+}
+form p {
+  font-size: 12px;
+}
+form .submit {
+  display: inline-block;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  background: rgb(167, 116, 21);
+  color: white;
+  border-radius: 40px;
+}
+
+.footer {
+  padding: 10px 0;
+  background-color: rgb(60, 59, 59);
+}
+.footer .kel {
+  text-align: center;
+  padding-bottom: 8px;
+  color: whitesmoke;
+}
+.footer .kel p {
+  font-size: 13px;
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer ul li a:hover {
+  opacity: 1;
+}
+.footer p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 10px;
+  color: whitesmoke;
+}
+
+.menu-icon {
+  display: none !important;
+  font-size: 25px;
+  color: white;
+}
+
+.ctn-orange {
+  text-align: center;
+  display: none;
+}
+
+@media only screen and (max-width: 978px) {
+  .gambarjai {
+    width: 300px;
+  }
+
+  .home .content .imgbox {
+    width: auto;
+  }
+
+  .home .textbox h2 b {
+    font-size: 30px;
+  }
+  .home .textbox h1 {
+    font-size: 50px !important;
+  }
+  .home .textbox span {
+    font-size: 30px !important;
+  }
+
+  section .jerukjeruk2 {
+    padding-top: 30px;
+    width: 200px;
+  }
+  section .imgj1 img {
+    width: 400px !important;
+  }
+  .camera {
+    padding: 70px 30px 0px 30px;
+  }
+
+  .camera video {
+    width: 90vw !important;
+  }
+}
+@media only screen and (max-width: 686px) {
+  .gambarjai {
+    width: 200px;
+  }
+
+  .home .content .imgbox {
+    width: auto;
+    padding: 0;
+  }
+
+  .home .textbox h2 b {
+    font-size: 30px;
+  }
+  .home .textbox h1 {
+    font-size: 50px !important;
+  }
+  .home .textbox span {
+    font-size: 30px !important;
+  }
+  .home .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  section .imginfo .jerukjeruk2 {
+    display: none;
+  }
+  .ctn-orange {
+    display: block;
+  }
+
+  .info .content3 .imginfo {
+    width: 0;
+  }
+
+  .info .textinfo h2 {
+    font-size: 25px !important;
+  }
+  .info .textinfo p {
+    font-size: 15px !important;
+  }
+  .info .lanjut p {
+    font-size: 15px !important;
+  }
+  .tim h1 {
+    font-size: 25px !important;
+  }
+  section .imgj1 img {
+    width: 300px !important;
+  }
+  .up {
+    padding: 40px 30px;
+  }
+}
+
+@media only screen and (max-width: 531px) {
+  header .navlist {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    background-color: rgb(167, 116, 21);
+    height: 100vh;
+    width: 50vw;
+    padding-top: 10vh;
+    z-index: -1;
+    transform: translateX(100%);
+  }
+  header .slide {
+    transform: translateX(0);
+  }
+  .menu-icon {
+    display: inline-block !important;
+  }
+  header {
+    padding: 0 20px 0 20px;
+  }
+  header a .logo {
+    margin: 0;
+  }
+  section .ctn-orange .jerukjeruk2 {
+    padding-top: 30px;
+    width: 150px;
+  }
+  section .jerukjeruk2 {
+    padding-top: 30px;
+    width: 100px;
+  }
+  .home {
+    padding: 10rem 3rem;
+  }
+  .info {
+    padding: 40px 30px !important;
+  }
+  section .imgj1 {
+    width: auto !important;
+  }
+  .detec .content2 {
+    flex-direction: column;
+  }
+  .detec .content2 .upload {
+    margin-right: 0;
+  }
+  section .imgj1 img {
+    width: 250px !important;
+  }
+  .camera video {
+    width: 80vw !important;
+    height: 55vh !important;
+  }
+}

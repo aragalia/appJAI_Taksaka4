@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detection</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylecss.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#"> <img src="assets/img/j3.png" alt="JAI" class="logo" /></a>
+      <ul class="navlist">
+        <li><a style="text-decoration: none" href="home2.html">HOME</a></li>
+        <li>
+          <a style="text-decoration: none" href="detec2.html">DETECTION</a>
+        </li>
+        <li class="servis">
+          <a style="text-decoration: none" href="#"
+            >INFORMATION <i class="bx bx-caret-down"></i
+          ></a>
+          <ul class="drop-down">
+            <li><a href="info2.html"> Info Aplikasi</a></li>
+            <li><a href="#tim"> Team</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <i class="bx bx-menu menu-icon"></i>
+    </header>
+
+    <section class="detec" id="detec">
+      <div class="content2">
+        <div class="imgj1">
+          <img src="assets/img/detek2.png" class="jerukbelah" />
+        </div>
+        <div class="upload">
+          <button onclick="startDetection()">Deteksi</button>
+
+          <script>
+              function startDetection() {
+                  // Redirect to the Streamlit app for detection
+                  window.location.href = "https://appjai-zu3qdji4jagiguamhp7jhz.streamlit.app/";
+              }
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+  
+      <ul class="list">
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="detec2.html">Detection</a></li>
+        <li><a href="info2.html">Information</a></li>
+        <li><a href="#tim">Team</a></li>
+      </ul>
+      <p>Copyright © 2023 Taksaka4 | Orbit Future Academy | MSIB5 </p>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
